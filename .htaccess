@@ -1,0 +1,9 @@
+# Serve every text file as UTF-8 so Japanese and Korean display correctly.
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js
+
+# After turning on free SSL in the Lolipop user page, remove the "#" from the
+# three lines below to send every visitor to the https:// version.
+# RewriteEngine On
+# RewriteCond %{HTTPS} !on
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
